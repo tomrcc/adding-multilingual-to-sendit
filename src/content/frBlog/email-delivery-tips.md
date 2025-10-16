@@ -1,6 +1,7 @@
 ---
+_schema: default
 date: 2022-03-10T00:00:00Z
-title: Email delivery tips
+title: French Delivery Tips
 tags:
   - email
   - blog
@@ -21,5 +22,4 @@ seo:
   no_index: false
 draft: false
 ---
-
-Translated in the WYSIWYG editor!
+Translated in the WYSIWYG editor! Oui Oui
