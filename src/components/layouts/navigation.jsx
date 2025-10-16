@@ -1,8 +1,17 @@
 import { useEffect, useState } from "react";
+import useLanguagePicker from "./useLanguagePicker";
 import navigation from "@data/navigation.json";
 
 export default function Navigation({ pageUrl }) {
   const [isSticky, setSticky] = useState(false);
+  const {
+    currentLanguage,
+    isLanguageDropdownOpen,
+    toggleLanguageDropdown,
+    handleLanguageSelect,
+    languageConfig,
+    availableLanguages
+  } = useLanguagePicker(pageUrl);
 
   const handleScroll = () => {
     setSticky(window.scrollY >= 70);
@@ -38,8 +47,6 @@ export default function Navigation({ pageUrl }) {
       parentDropdown.querySelector('.dropdown-menu').classList.add('show');
     }
   };
-  
-  
 
   return (
     <>
@@ -164,6 +171,35 @@ export default function Navigation({ pageUrl }) {
                 </li>
               ))}
             </ul>
+            
+            {/* Language Picker */}
+            <div className="nav-item dropdown language-picker">
+              <a
+                href="#"
+                className="nav-link dropdown-toggle"
+                onClick={toggleLanguageDropdown}
+                role="button"
+                aria-expanded={isLanguageDropdownOpen}
+              >
+                {languageConfig[currentLanguage]?.flag} {languageConfig[currentLanguage]?.shortLabel}
+              </a>
+              <ul className={`dropdown-menu ${isLanguageDropdownOpen ? 'show' : ''}`}>
+                {availableLanguages.map((langCode) => (
+                  <li key={langCode}>
+                    <a 
+                      className="dropdown-item" 
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleLanguageSelect(langCode);
+                      }}
+                    >
+                      {languageConfig[langCode]?.flag} {languageConfig[langCode]?.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           { navigation.enable_nav_btn ? (
             <>
