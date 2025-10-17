@@ -58,7 +58,7 @@ export default function Navigation({ pageUrl }) {
 
   return (
     <>
-      <header data-rosey-ns="common">
+      <header>
         <nav
           className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown${isSticky ? " sticky-nav" : ""}`}
           id="mainnavigationBar"
@@ -155,14 +155,14 @@ export default function Navigation({ pageUrl }) {
                         href={`${item.link}`}
                         className={`nav-link dropdown-link ${pageUrl?.pathname === item.link ? "active" : ""}`}
                         onClick={handleDropdownClick}
-                        data-rosey={generateRoseyId(item.text)}
+                        data-rosey={`common:${generateRoseyId(item.text)}`}
                       >
                         {localeData?.[`common:${generateRoseyId(item.text)}`]?.value ?? item.text}
                       </a>
                       <ul className="dropdown-menu">
                         {item.dropdown.map((dropdown_item, j) => (
                           <li key={j}>
-                            <a className="dropdown-item" href={dropdown_item.dropdown_link} data-rosey={generateRoseyId(dropdown_item.dropdown_text)}>
+                            <a className="dropdown-item" href={dropdown_item.dropdown_link} data-rosey={`common:${generateRoseyId(dropdown_item.dropdown_text)}`}>
                               {localeData?.[`common:${generateRoseyId(dropdown_item.dropdown_text)}`]?.value ?? dropdown_item.dropdown_text}
                             </a>
                           </li>
@@ -173,7 +173,7 @@ export default function Navigation({ pageUrl }) {
                     <a
                       href={`${item.link}`}
                       className={`nav-link ${pageUrl?.pathname === item.link ? "active" : ""}`}
-                      data-rosey={generateRoseyId(item.text)}
+                      data-rosey={`common:${generateRoseyId(item.text)}`}
                     >
                       {localeData?.[`common:${generateRoseyId(item.text)}`]?.value ?? item.text}
                     </a>
