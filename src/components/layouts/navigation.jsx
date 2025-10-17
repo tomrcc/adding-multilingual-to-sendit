@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import useLanguagePicker from "./useLanguagePicker";
 import navigation from "@data/navigation.json";
 
-
 export default function Navigation({ pageUrl }) {
   const [isSticky, setSticky] = useState(false);
   const [localeData, setLocaleData] = useState(false);
@@ -16,7 +15,7 @@ export default function Navigation({ pageUrl }) {
   } = useLanguagePicker(pageUrl);
   
   const allLocales = import.meta.glob('/rosey/locales/*.json', { eager: true });
-  
+
   const handleScroll = () => {
     setSticky(window.scrollY >= 70);
   };
