@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import useLanguagePicker from "./useLanguagePicker";
 import navigation from "@data/navigation.json";
+const [localeData, setLocaleData] = useState(false);
+const allLocales = import.meta.glob('/rosey/locales/*.json', { eager: true });
 
 export default function Navigation({ pageUrl }) {
   const [isSticky, setSticky] = useState(false);
@@ -18,6 +20,10 @@ export default function Navigation({ pageUrl }) {
   };
 
   useEffect(() => {
+    const pathname = window.location.pathname;
+    const locale = pathname.split("/")[1];
+    setLocaleData(allLocales[`/rosey/locales/${locale}.json`]?.default);
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -149,13 +155,13 @@ export default function Navigation({ pageUrl }) {
                         onClick={handleDropdownClick}
                         data-rosey={item.text}
                       >
-                        {item.text}
+                        {localeData?.[`item.text`]?.value ?? item.text}
                       </a>
                       <ul className="dropdown-menu">
                         {item.dropdown.map((dropdown_item, j) => (
                           <li key={j}>
                             <a className="dropdown-item" href={dropdown_item.dropdown_link} data-rosey={dropdown_item.dropdown_text}>
-                              {dropdown_item.dropdown_text}
+                              {localeData?.[dropdown_item.dropdown_text]?.value ?? dropdown_item.dropdown_text}
                             </a>
                           </li>
                         ))}
@@ -167,7 +173,7 @@ export default function Navigation({ pageUrl }) {
                       className={`nav-link ${pageUrl?.pathname === item.link ? "active" : ""}`}
                       data-rosey={item.text}
                     >
-                      {item.text}
+                      {localeData?.[item.text]?.value ?? item.text}
                     </a>
                   )}
                 </li>
@@ -212,7 +218,7 @@ export default function Navigation({ pageUrl }) {
                   className="btn btn-sm btn-links"
                   data-rosey={navigation.nav_btn?.text}
                 >
-                  {navigation.nav_btn?.text}
+                  {localeData?.[navigation.nav_btn?.text]?.value ?? navigation.nav_btn?.text}
                 </a>
               </div>
             </div>
