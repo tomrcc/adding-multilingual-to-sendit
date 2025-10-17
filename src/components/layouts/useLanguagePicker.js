@@ -42,25 +42,50 @@ const detectLanguageFromUrl = (urlPath) => {
 export default function useLanguagePicker(pageUrl) {
   // Initialize with detected language from current URL
   const getInitialLanguage = () => {
+    // Handle both URL object and plain object with pathname
     const currentPath =
       pageUrl?.pathname ||
+      pageUrl?.toString?.() ||
       (typeof window !== "undefined" ? window.location.pathname : "");
-    return detectLanguageFromUrl(currentPath);
+    const detectedLang = detectLanguageFromUrl(currentPath);
+
+    // Debug logging
+    console.log("Initial language detection:", {
+      pageUrl: pageUrl?.pathname || pageUrl?.toString?.(),
+      windowPath:
+        typeof window !== "undefined" ? window.location.pathname : "SSR",
+      currentPath,
+      detectedLang,
+    });
+
+    return detectedLang;
   };
 
   const [currentLanguage, setCurrentLanguage] = useState(getInitialLanguage);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
   useEffect(() => {
-    // Use pageUrl if available, otherwise fall back to window.location
-    const currentPath = pageUrl?.pathname || window.location.pathname;
+    // Handle both URL object and plain object with pathname
+    const currentPath =
+      pageUrl?.pathname || pageUrl?.toString?.() || window.location.pathname;
     const detectedLang = detectLanguageFromUrl(currentPath);
+
+    // Debug logging
+    console.log("Language detection:", {
+      pageUrl: pageUrl?.pathname || pageUrl?.toString?.(),
+      windowPath: window.location.pathname,
+      currentPath,
+      detectedLang,
+      currentLanguage,
+    });
+
     setCurrentLanguage(detectedLang);
   }, [pageUrl]);
 
   const switchLanguage = (targetLanguage) => {
-    // Use pageUrl if available, otherwise fall back to window.location
-    const currentPath = pageUrl?.pathname || window.location.pathname;
+    // Handle both URL object and plain object with pathname
+    const currentPath =
+      pageUrl?.pathname || pageUrl?.toString?.() || window.location.pathname;
 
     if (!currentPath) return;
 
