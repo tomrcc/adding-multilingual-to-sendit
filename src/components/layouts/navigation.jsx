@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { generateRoseyId } from "rosey-cloudcannon-connector/utils";
 import useLanguagePicker from "./useLanguagePicker";
 import navigation from "@data/navigation.json";
 
@@ -57,7 +58,7 @@ export default function Navigation({ pageUrl }) {
 
   return (
     <>
-      <header>
+      <header data-rosey-ns="common">
         <nav
           className={`navbar navbar-expand-lg position-fixed w-100 zindex-dropdown${isSticky ? " sticky-nav" : ""}`}
           id="mainnavigationBar"
@@ -154,15 +155,15 @@ export default function Navigation({ pageUrl }) {
                         href={`${item.link}`}
                         className={`nav-link dropdown-link ${pageUrl?.pathname === item.link ? "active" : ""}`}
                         onClick={handleDropdownClick}
-                        data-rosey={item.text}
+                        data-rosey={generateRoseyId(item.text)}
                       >
-                        {localeData?.[`item.text`]?.value ?? item.text}
+                        {localeData?.[`common:${generateRoseyId(item.text)}`]?.value ?? item.text}
                       </a>
                       <ul className="dropdown-menu">
                         {item.dropdown.map((dropdown_item, j) => (
                           <li key={j}>
-                            <a className="dropdown-item" href={dropdown_item.dropdown_link} data-rosey={dropdown_item.dropdown_text}>
-                              {localeData?.[dropdown_item.dropdown_text]?.value ?? dropdown_item.dropdown_text}
+                            <a className="dropdown-item" href={dropdown_item.dropdown_link} data-rosey={generateRoseyId(dropdown_item.dropdown_text)}>
+                              {localeData?.[`common:${generateRoseyId(dropdown_item.dropdown_text)}`]?.value ?? dropdown_item.dropdown_text}
                             </a>
                           </li>
                         ))}
@@ -172,9 +173,9 @@ export default function Navigation({ pageUrl }) {
                     <a
                       href={`${item.link}`}
                       className={`nav-link ${pageUrl?.pathname === item.link ? "active" : ""}`}
-                      data-rosey={item.text}
+                      data-rosey={generateRoseyId(item.text)}
                     >
-                      {localeData?.[item.text]?.value ?? item.text}
+                      {localeData?.[`common:${generateRoseyId(item.text)}`]?.value ?? item.text}
                     </a>
                   )}
                 </li>
@@ -217,9 +218,9 @@ export default function Navigation({ pageUrl }) {
                 <a
                   href={`${navigation.nav_btn?.link}`}
                   className="btn btn-sm btn-links"
-                  data-rosey={navigation.nav_btn?.text}
+                  data-rosey={generateRoseyId(navigation.nav_btn?.text)}
                 >
-                  {localeData?.[navigation.nav_btn?.text]?.value ?? navigation.nav_btn?.text}
+                  {localeData?.[`common:${generateRoseyId(navigation.nav_btn?.text)}`]?.value ?? navigation.nav_btn?.text}
                 </a>
               </div>
             </div>

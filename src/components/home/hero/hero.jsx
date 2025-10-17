@@ -9,12 +9,14 @@ export default function HomeHero(block) {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="hero-two-content">
-              <h1 className="mb-4">{block.title}</h1>
+              <h1 className="mb-4" data-rosey={generateRoseyId(block.title)}>{block.title}</h1>
               <div
                 className="mb-7 w-xxl-80"
                 dangerouslySetInnerHTML={{
                   __html: md.render(block.description),
                 }}
+                data-rosey-ns="rcc-markdown"
+                data-rosey-tagger
               />
               <div className="">
                 {block.button && (
@@ -23,7 +25,10 @@ export default function HomeHero(block) {
                     className="btn btn-primary btn-lg"
                   >
                     {" "}
-                    {block.button.text}{" "}
+                    <span data-rosey={generateRoseyId(block.button.text)}>
+                      {block.button.text}
+                    </span>
+                    {" "}
                   </a>
                 )}
               </div>
