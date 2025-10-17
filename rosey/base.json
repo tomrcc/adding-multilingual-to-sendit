@@ -1,7 +1,23 @@
 {
   "version": 2,
   "keys": {
-    "About": {
+    "Beautiful-email-campaigns": {
+      "original": "Beautiful email campaigns",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "Try-This-Free": {
+      "original": "Try This Free",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "common:About": {
       "original": "About",
       "value": null,
       "pages": {
@@ -37,7 +53,7 @@
       },
       "total": 29
     },
-    "All Articles": {
+    "common:All-Articles": {
       "original": "All Articles",
       "value": null,
       "pages": {
@@ -73,7 +89,7 @@
       },
       "total": 29
     },
-    "Blog": {
+    "common:Blog": {
       "original": "Blog",
       "value": null,
       "pages": {
@@ -109,7 +125,7 @@
       },
       "total": 29
     },
-    "Contact": {
+    "common:Contact": {
       "original": "Contact",
       "value": null,
       "pages": {
@@ -145,7 +161,7 @@
       },
       "total": 29
     },
-    "Features": {
+    "common:Features": {
       "original": "Features",
       "value": null,
       "pages": {
@@ -181,7 +197,7 @@
       },
       "total": 29
     },
-    "Get Started": {
+    "common:Get-Started": {
       "original": "Get Started",
       "value": null,
       "pages": {
@@ -217,7 +233,7 @@
       },
       "total": 29
     },
-    "Home": {
+    "common:Home": {
       "original": "Home",
       "value": null,
       "pages": {
@@ -253,7 +269,7 @@
       },
       "total": 29
     },
-    "Marketing": {
+    "common:Marketing": {
       "original": "Marketing",
       "value": null,
       "pages": {
@@ -289,7 +305,7 @@
       },
       "total": 29
     },
-    "Pricing": {
+    "common:Pricing": {
       "original": "Pricing",
       "value": null,
       "pages": {
@@ -325,7 +341,7 @@
       },
       "total": 29
     },
-    "Technology": {
+    "common:Technology": {
       "original": "Technology",
       "value": null,
       "pages": {
@@ -360,6 +376,14 @@
         "tags/technology/index.html": 1
       },
       "total": 29
+    },
+    "rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E": {
+      "original": "With Sendit, you can quickly create beautiful rich emails that capture a reader's attention, engage them, and convert them into customers.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
     }
   }
 }

@@ -8,111 +8,58 @@ _inputs:
         - heading: Still to translate (fr)
           comment: "[index.html](https://tan-artichoke.cloudvent.net/index.html)"
           inputs:
-            - About
-            - All Articles
-            - Blog
-            - Contact
-            - Features
-            - Get Started
-            - Home
-            - Marketing
-            - Pricing
-            - Technology
+            - Beautiful-email-campaigns
+            - Try-This-Free
+            - rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E
         - heading: Already translated (fr)
           comment: "[index.html](https://tan-artichoke.cloudvent.net/index.html)"
           inputs: []
-  About:
-    label: About
+  Beautiful-email-campaigns:
+    label: Beautiful email campaigns
     hidden: false
     type: text
     options: {}
     comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=About)"
+      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Beautiful\
+      %20email%20campaigns)"
     context: {}
-  All Articles:
-    label: All Articles
+  Try-This-Free:
+    label: Try This Free
     hidden: false
     type: text
     options: {}
     comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=All%20Art\
-      icles)"
+      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Try%20Thi\
+      s%20Free)"
     context: {}
-  Blog:
-    label: Blog
+  rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E:
+    label: With Sendit, you can quickly create beautiful rich emails that c...
     hidden: false
-    type: text
-    options: {}
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
     comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Blog)"
-    context: {}
-  Contact:
-    label: Contact
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Contact)"
-    context: {}
-  Features:
-    label: Features
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Features)"
-    context: {}
-  Get Started:
-    label: Get Started
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Get%20Sta\
-      rted)"
-    context: {}
-  Home:
-    label: Home
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Home)"
-    context: {}
-  Marketing:
-    label: Marketing
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Marketing\
-      )"
-    context: {}
-  Pricing:
-    label: Pricing
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Pricing)"
-    context: {}
-  Technology:
-    label: Technology
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Technolog\
-      y)"
-    context: {}
+      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=With%20Se\
+      ndit%2C%20you%20can,convert%20them%20into%20customers.)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        With Sendit, you can quickly create beautiful rich emails that capture a
+        reader's attention, engage them, and convert them into customers.
 urlTranslation: index.html
-About: ""
-All Articles: ""
-Blog: ""
-Contact: ""
-Features: ""
-Get Started: ""
-Home: ""
-Marketing: ""
-Pricing: ""
-Technology: ""
+Beautiful-email-campaigns: ""
+Try-This-Free: ""
+rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E: ""

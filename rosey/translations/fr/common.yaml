@@ -1,0 +1,103 @@
+_inputs:
+  $:
+    type: object
+    comment: Translations that appear on many pages
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: Text to translate
+          inputs:
+            - common:About
+            - common:All-Articles
+            - common:Blog
+            - common:Contact
+            - common:Features
+            - common:Get-Started
+            - common:Home
+            - common:Marketing
+            - common:Pricing
+            - common:Technology
+        - heading: Already translated (fr)
+          comment: Text already translated
+          inputs: []
+  common:About:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:All-Articles:
+    label: All Articles
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Contact:
+    label: Contact
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Features:
+    label: Features
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Home:
+    label: Home
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Marketing:
+    label: Marketing
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Pricing:
+    label: Pricing
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Technology:
+    label: Technology
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+common:About: ""
+common:All-Articles: ""
+common:Blog: ""
+common:Contact: ""
+common:Features: ""
+common:Get-Started: ""
+common:Home: ""
+common:Marketing: ""
+common:Pricing: ""
+common:Technology: ""
