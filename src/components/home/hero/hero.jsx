@@ -1,4 +1,5 @@
 import MarkdownIt from "markdown-it";
+import {generateRoseyId} from "rosey-cloudcannon-connector/utils"
 const md = new MarkdownIt({ html: true });
 
 export default function HomeHero(block) {
