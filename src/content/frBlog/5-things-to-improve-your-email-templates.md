@@ -1,11 +1,11 @@
 ---
 _schema: default
 date: 2022-06-10T00:00:00Z
-title: 5 things to improve your email templates
+title: France! 5 things to improve your email templates
 tags:
   - marketing
   - blog
-author: Aaron Britt
+author: Diffy Author
 thumb_image:
   image: /images/blog/blog-thumb-6.jpg
   image_alt: People working on laptops and looking at charts
@@ -22,5 +22,4 @@ seo:
   no_index: false
 draft: false
 ---
-
-Translted!
+Translted! FRANNNNNNNNNNNNNSE

@@ -26,78 +26,78 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:All-Articles:
     label: All Articles
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:Blog:
     label: Blog
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:Contact:
     label: Contact
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:Features:
     label: Features
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:Get-Started:
     label: Get Started
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:Home:
     label: Home
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:Marketing:
     label: Marketing
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:Pricing:
     label: Pricing
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
   common:Technology:
     label: Technology
     hidden: false
     type: text
     options: {}
-    comment: ""
+    comment: ''
     context: {}
-common:About: ""
-common:All-Articles: ""
-common:Blog: ""
-common:Contact: ""
-common:Features: ""
-common:Get-Started: ""
-common:Home: ""
-common:Marketing: ""
-common:Pricing: ""
-common:Technology: ""
+common:About: ''
+common:All-Articles: ''
+common:Blog: ''
+common:Contact: ''
+common:Features: ''
+common:Get-Started: ''
+common:Home: ''
+common:Marketing: ''
+common:Pricing: FRANCE
+common:Technology: ''
