@@ -41,7 +41,7 @@
 	},
 	"common:Pricing": {
 		"original": "Pricing",
-		"value": "Pricing"
+		"value": "FRANCE"
 	},
 	"common:Technology": {
 		"original": "Technology",
@@ -49,6 +49,6 @@
 	},
 	"rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E": {
 		"original": "With Sendit, you can quickly create beautiful rich emails that capture a reader's attention, engage them, and convert them into customers.",
-		"value": "With Sendit, you can quickly create beautiful rich emails that capture a reader's attention, engage them, and convert them into customers."
+		"value": "Avec Sendit, vous pouvez rapidement créer de magnifiques e-mails riches qui captent l'attention du lecteur, l'engagent et le convertissent en clients."
 	}
 }

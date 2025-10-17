@@ -1,37 +1,36 @@
 _inputs:
   $:
     type: object
-    comment: '[index.html](https://tan-artichoke.cloudvent.net/index.html)'
+    comment: "[index.html](https://tan-artichoke.cloudvent.net/index.html)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr)
-          comment: '[index.html](https://tan-artichoke.cloudvent.net/index.html)'
+          comment: "[index.html](https://tan-artichoke.cloudvent.net/index.html)"
           inputs:
             - Beautiful-email-campaigns
             - Try-This-Free
-            - >-
-              rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E
         - heading: Already translated (fr)
-          comment: '[index.html](https://tan-artichoke.cloudvent.net/index.html)'
-          inputs: []
+          comment: "[index.html](https://tan-artichoke.cloudvent.net/index.html)"
+          inputs:
+            - rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E
   Beautiful-email-campaigns:
     label: Beautiful email campaigns
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Beautiful%20email%20campaigns)
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Beautiful\
+      %20email%20campaigns)"
     context: {}
   Try-This-Free:
     label: Try This Free
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Try%20This%20Free)
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Try%20Thi\
+      s%20Free)"
     context: {}
   rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E:
     label: With Sendit, you can quickly create beautiful rich emails that c...
@@ -50,9 +49,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: >-
-      [See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=With%20Sendit%2C%20you%20can,convert%20them%20into%20customers.)
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=With%20Se\
+      ndit%2C%20you%20can,convert%20them%20into%20customers.)"
     context:
       open: false
       title: Untranslated Text
@@ -61,8 +60,8 @@ _inputs:
         With Sendit, you can quickly create beautiful rich emails that capture a
         reader's attention, engage them, and convert them into customers.
 urlTranslation: index.html
-Beautiful-email-campaigns: ''
-Try-This-Free: ''
-rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E: >-
+Beautiful-email-campaigns: ""
+Try-This-Free: ""
+rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E:
   Avec Sendit, vous pouvez rapidement créer de magnifiques e-mails riches qui
   captent l'attention du lecteur, l'engagent et le convertissent en clients.
