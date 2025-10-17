@@ -55,7 +55,7 @@ collections_config:
   fr_posts:
     icon: newspaper
     path: src/content/frBlog
-    url: "/fr-FR/blog/[slug]/"
+    url: "/fr/blog/[slug]/"
     disable_add_folder: true
     _enabled_editors:
       - content
