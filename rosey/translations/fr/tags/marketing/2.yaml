@@ -1,0 +1,28 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/marketing/2/](https://tan-artichoke.cloudvent.net/tags/marketin\
+      g/2/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[tags/marketing/2/](https://tan-artichoke.cloudvent.net/tags/marketin\
+            g/2/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[tags/marketing/2/](https://tan-artichoke.cloudvent.net/tags/marketin\
+            g/2/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Ge\
+      t%20Started)"
+    context: {}
+urlTranslation: tags/marketing/2/index.html
+Get-Started: ""

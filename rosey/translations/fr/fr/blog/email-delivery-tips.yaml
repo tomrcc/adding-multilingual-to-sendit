@@ -1,0 +1,28 @@
+_inputs:
+  $:
+    type: object
+    comment: "[fr/blog/email-delivery-tips/](https://tan-artichoke.cloudvent.net/fr\
+      /blog/email-delivery-tips/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[fr/blog/email-delivery-tips/](https://tan-artichoke.cloudvent.net/fr\
+            /blog/email-delivery-tips/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[fr/blog/email-delivery-tips/](https://tan-artichoke.cloudvent.net/fr\
+            /blog/email-delivery-tips/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/email-delivery-tips/\
+      #:~:text=Get%20Started)"
+    context: {}
+urlTranslation: fr/blog/email-delivery-tips/index.html
+Get-Started: ""

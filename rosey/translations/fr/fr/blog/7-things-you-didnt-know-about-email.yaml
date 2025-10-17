@@ -1,0 +1,28 @@
+_inputs:
+  $:
+    type: object
+    comment: "[fr/blog/7-things-you-didnt-know-about-email/](https://tan-artichoke.\
+      cloudvent.net/fr/blog/7-things-you-didnt-know-about-email/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[fr/blog/7-things-you-didnt-know-about-email/](https://tan-artichoke.\
+            cloudvent.net/fr/blog/7-things-you-didnt-know-about-email/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[fr/blog/7-things-you-didnt-know-about-email/](https://tan-artichoke.\
+            cloudvent.net/fr/blog/7-things-you-didnt-know-about-email/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/7-things-you-didnt-k\
+      now-about-email/#:~:text=Get%20Started)"
+    context: {}
+urlTranslation: fr/blog/7-things-you-didnt-know-about-email/index.html
+Get-Started: ""

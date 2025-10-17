@@ -1,0 +1,25 @@
+_inputs:
+  $:
+    type: object
+    comment: "[about/](https://tan-artichoke.cloudvent.net/about/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[about/](https://tan-artichoke.cloudvent.net/about/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[about/](https://tan-artichoke.cloudvent.net/about/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=Get%20Started\
+      )"
+    context: {}
+urlTranslation: about/index.html
+Get-Started: ""

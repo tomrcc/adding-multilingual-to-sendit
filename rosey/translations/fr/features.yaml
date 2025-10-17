@@ -1,0 +1,25 @@
+_inputs:
+  $:
+    type: object
+    comment: "[features/](https://tan-artichoke.cloudvent.net/features/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[features/](https://tan-artichoke.cloudvent.net/features/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[features/](https://tan-artichoke.cloudvent.net/features/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/features/#:~:text=Get%20Star\
+      ted)"
+    context: {}
+urlTranslation: features/index.html
+Get-Started: ""

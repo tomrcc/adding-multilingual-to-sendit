@@ -1,0 +1,25 @@
+_inputs:
+  $:
+    type: object
+    comment: "[pricing/](https://tan-artichoke.cloudvent.net/pricing/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[pricing/](https://tan-artichoke.cloudvent.net/pricing/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[pricing/](https://tan-artichoke.cloudvent.net/pricing/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/pricing/#:~:text=Get%20Start\
+      ed)"
+    context: {}
+urlTranslation: pricing/index.html
+Get-Started: ""

@@ -1,0 +1,28 @@
+_inputs:
+  $:
+    type: object
+    comment: "[blog/what-are-the-best-email-clients/](https://tan-artichoke.cloudve\
+      nt.net/blog/what-are-the-best-email-clients/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[blog/what-are-the-best-email-clients/](https://tan-artichoke.cloudve\
+            nt.net/blog/what-are-the-best-email-clients/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[blog/what-are-the-best-email-clients/](https://tan-artichoke.cloudve\
+            nt.net/blog/what-are-the-best-email-clients/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/blog/what-are-the-best-email\
+      -clients/#:~:text=Get%20Started)"
+    context: {}
+urlTranslation: blog/what-are-the-best-email-clients/index.html
+Get-Started: ""

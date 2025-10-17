@@ -1,0 +1,25 @@
+_inputs:
+  $:
+    type: object
+    comment: "[privacy/](https://tan-artichoke.cloudvent.net/privacy/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[privacy/](https://tan-artichoke.cloudvent.net/privacy/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[privacy/](https://tan-artichoke.cloudvent.net/privacy/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/privacy/#:~:text=Get%20Start\
+      ed)"
+    context: {}
+urlTranslation: privacy/index.html
+Get-Started: ""

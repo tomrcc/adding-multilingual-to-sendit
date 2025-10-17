@@ -1,0 +1,28 @@
+_inputs:
+  $:
+    type: object
+    comment: "[blog/best-email-sending-services/](https://tan-artichoke.cloudvent.n\
+      et/blog/best-email-sending-services/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[blog/best-email-sending-services/](https://tan-artichoke.cloudvent.n\
+            et/blog/best-email-sending-services/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[blog/best-email-sending-services/](https://tan-artichoke.cloudvent.n\
+            et/blog/best-email-sending-services/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/blog/best-email-sending-serv\
+      ices/#:~:text=Get%20Started)"
+    context: {}
+urlTranslation: blog/best-email-sending-services/index.html
+Get-Started: ""

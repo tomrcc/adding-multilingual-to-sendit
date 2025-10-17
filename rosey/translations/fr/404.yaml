@@ -1,0 +1,24 @@
+_inputs:
+  $:
+    type: object
+    comment: "[404](https://tan-artichoke.cloudvent.net/404)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[404](https://tan-artichoke.cloudvent.net/404)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[404](https://tan-artichoke.cloudvent.net/404)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/404#:~:text=Get%20Started)"
+    context: {}
+urlTranslation: 404.html
+Get-Started: ""

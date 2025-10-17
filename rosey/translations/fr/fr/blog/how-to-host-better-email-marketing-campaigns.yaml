@@ -1,0 +1,31 @@
+_inputs:
+  $:
+    type: object
+    comment: "[fr/blog/how-to-host-better-email-marketing-campaigns/](https://tan-a\
+      rtichoke.cloudvent.net/fr/blog/how-to-host-better-email-marketing-campaig\
+      ns/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[fr/blog/how-to-host-better-email-marketing-campaigns/](https://tan-a\
+            rtichoke.cloudvent.net/fr/blog/how-to-host-better-email-marketing-c\
+            ampaigns/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[fr/blog/how-to-host-better-email-marketing-campaigns/](https://tan-a\
+            rtichoke.cloudvent.net/fr/blog/how-to-host-better-email-marketing-c\
+            ampaigns/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Get%20Started)"
+    context: {}
+urlTranslation: fr/blog/how-to-host-better-email-marketing-campaigns/index.html
+Get-Started: ""

@@ -1,0 +1,28 @@
+_inputs:
+  $:
+    type: object
+    comment: "[blog/5-things-to-improve-your-email-templates/](https://tan-artichok\
+      e.cloudvent.net/blog/5-things-to-improve-your-email-templates/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[blog/5-things-to-improve-your-email-templates/](https://tan-artichok\
+            e.cloudvent.net/blog/5-things-to-improve-your-email-templates/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[blog/5-things-to-improve-your-email-templates/](https://tan-artichok\
+            e.cloudvent.net/blog/5-things-to-improve-your-email-templates/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/blog/5-things-to-improve-you\
+      r-email-templates/#:~:text=Get%20Started)"
+    context: {}
+urlTranslation: blog/5-things-to-improve-your-email-templates/index.html
+Get-Started: ""

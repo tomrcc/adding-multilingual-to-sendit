@@ -1,0 +1,27 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/technology/](https://tan-artichoke.cloudvent.net/tags/technology/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[tags/technology/](https://tan-artichoke.cloudvent.net/tags/technolog\
+            y/)"
+          inputs:
+            - Get-Started
+        - heading: Already translated (fr)
+          comment: "[tags/technology/](https://tan-artichoke.cloudvent.net/tags/technolog\
+            y/)"
+          inputs: []
+  Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/technology/#:~:text=Get\
+      %20Started)"
+    context: {}
+urlTranslation: tags/technology/index.html
+Get-Started: ""
