@@ -24,41 +24,39 @@ const languageConfig = {
   // }
 };
 
+// Function to detect language from URL
+const detectLanguageFromUrl = (urlPath) => {
+  if (!urlPath) return defaultLocale;
+
+  const pathSegments = urlPath.split("/").filter(Boolean);
+  const firstSegment = pathSegments[0];
+
+  // Check if first segment matches any configured language code
+  const detectedLanguage = Object.keys(languageConfig).find(
+    (langCode) => langCode === firstSegment
+  );
+
+  return detectedLanguage || defaultLocale;
+};
+
 export default function useLanguagePicker(pageUrl) {
-  const [currentLanguage, setCurrentLanguage] = useState(defaultLocale);
-  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
-
-  // Function to detect language from URL
-  const detectLanguageFromUrl = (urlPath) => {
-    if (!urlPath) return defaultLocale;
-
-    const pathSegments = urlPath.split("/").filter(Boolean);
-    const firstSegment = pathSegments[0];
-
-    // Check if first segment matches any configured language code
-    const detectedLanguage = Object.keys(languageConfig).find(
-      (langCode) => langCode === firstSegment
-    );
-
-    return detectedLanguage || defaultLocale;
+  // Initialize with detected language from current URL
+  const getInitialLanguage = () => {
+    const currentPath =
+      pageUrl?.pathname ||
+      (typeof window !== "undefined" ? window.location.pathname : "");
+    return detectLanguageFromUrl(currentPath);
   };
+
+  const [currentLanguage, setCurrentLanguage] = useState(getInitialLanguage);
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
   useEffect(() => {
     // Use pageUrl if available, otherwise fall back to window.location
     const currentPath = pageUrl?.pathname || window.location.pathname;
     const detectedLang = detectLanguageFromUrl(currentPath);
-
-    if (detectedLang !== currentLanguage) {
-      setCurrentLanguage(detectedLang);
-    }
-  }, [pageUrl, currentLanguage]);
-
-  // Also detect on mount in case pageUrl is not immediately available
-  useEffect(() => {
-    const currentPath = window.location.pathname;
-    const detectedLang = detectLanguageFromUrl(currentPath);
     setCurrentLanguage(detectedLang);
-  }, []);
+  }, [pageUrl]);
 
   const switchLanguage = (targetLanguage) => {
     // Use pageUrl if available, otherwise fall back to window.location
