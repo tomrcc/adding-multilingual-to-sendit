@@ -9,7 +9,6 @@ _inputs:
           comment: "[index.html](https://tan-artichoke.cloudvent.net/index.html)"
           inputs:
             - Beautiful-email-campaigns
-            - Get-Started
             - Try-This-Free
         - heading: Already translated (fr)
           comment: "[index.html](https://tan-artichoke.cloudvent.net/index.html)"
@@ -23,15 +22,6 @@ _inputs:
     comment: "[See in
       context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Beautiful\
       %20email%20campaigns)"
-    context: {}
-  Get-Started:
-    label: Get Started
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://tan-artichoke.cloudvent.net/index.html#:~:text=Get%20Sta\
-      rted)"
     context: {}
   Try-This-Free:
     label: Try This Free
@@ -71,7 +61,6 @@ _inputs:
         reader's attention, engage them, and convert them into customers.
 urlTranslation: index.html
 Beautiful-email-campaigns: ""
-Get-Started: ""
 Try-This-Free: ""
 rcc-markdown:With-Sendit-you-can-quickly-create-beautiful-rich-emails-that-capture-a-reader's-attention-engage-them-and-convert-them-into-customers%2E:
   Avec Sendit, vous pouvez rapidement créer de magnifiques e-mails riches qui

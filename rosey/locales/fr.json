@@ -3,10 +3,6 @@
 		"original": "Beautiful email campaigns",
 		"value": "Beautiful email campaigns"
 	},
-	"Get-Started": {
-		"original": "Get Started",
-		"value": "Get Started"
-	},
 	"Try-This-Free": {
 		"original": "Try This Free",
 		"value": "Try This Free"
@@ -30,6 +26,10 @@
 	"common:Features": {
 		"original": "Features",
 		"value": "Features"
+	},
+	"common:Get-Started": {
+		"original": "Get Started",
+		"value": "Get Started"
 	},
 	"common:Home": {
 		"original": "Home",

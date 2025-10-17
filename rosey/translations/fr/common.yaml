@@ -13,6 +13,7 @@ _inputs:
             - common:Blog
             - common:Contact
             - common:Features
+            - common:Get-Started
             - common:Home
             - common:Marketing
             - common:Technology
@@ -55,6 +56,13 @@ _inputs:
     options: {}
     comment: ""
     context: {}
+  common:Get-Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
   common:Home:
     label: Home
     hidden: false
@@ -88,6 +96,7 @@ common:All-Articles: ""
 common:Blog: ""
 common:Contact: ""
 common:Features: ""
+common:Get-Started: ""
 common:Home: ""
 common:Marketing: ""
 common:Pricing: FRANCE
