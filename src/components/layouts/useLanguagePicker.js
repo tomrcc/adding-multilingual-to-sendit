@@ -28,45 +28,62 @@ export default function useLanguagePicker(pageUrl) {
   const [currentLanguage, setCurrentLanguage] = useState(defaultLocale);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
+  // Function to detect language from URL
+  const detectLanguageFromUrl = (urlPath) => {
+    if (!urlPath) return defaultLocale;
+
+    const pathSegments = urlPath.split("/").filter(Boolean);
+    const firstSegment = pathSegments[0];
+
+    // Check if first segment matches any configured language code
+    const detectedLanguage = Object.keys(languageConfig).find(
+      (langCode) => langCode === firstSegment
+    );
+
+    return detectedLanguage || defaultLocale;
+  };
+
   useEffect(() => {
-    if (pageUrl?.pathname) {
-      const pathSegments = pageUrl.pathname.split("/").filter(Boolean);
-      const firstSegment = pathSegments[0];
+    // Use pageUrl if available, otherwise fall back to window.location
+    const currentPath = pageUrl?.pathname || window.location.pathname;
+    const detectedLang = detectLanguageFromUrl(currentPath);
 
-      // Check if first segment matches any configured language code
-      const detectedLanguage = Object.keys(languageConfig).find(
-        (langCode) => langCode === firstSegment
-      );
-
-      if (detectedLanguage) {
-        setCurrentLanguage(detectedLanguage);
-      } else {
-        setCurrentLanguage(defaultLocale);
-      }
+    if (detectedLang !== currentLanguage) {
+      setCurrentLanguage(detectedLang);
     }
-  }, [pageUrl]);
+  }, [pageUrl, currentLanguage]);
+
+  // Also detect on mount in case pageUrl is not immediately available
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const detectedLang = detectLanguageFromUrl(currentPath);
+    setCurrentLanguage(detectedLang);
+  }, []);
 
   const switchLanguage = (targetLanguage) => {
-    if (!pageUrl?.pathname) return;
+    // Use pageUrl if available, otherwise fall back to window.location
+    const currentPath = pageUrl?.pathname || window.location.pathname;
 
-    let currentPath = pageUrl.pathname;
+    if (!currentPath) return;
+
+    let pathToModify = currentPath;
 
     // Remove current language prefix if it exists
     Object.keys(languageConfig).forEach((langCode) => {
       if (
         langCode !== defaultLocale &&
-        currentPath.startsWith(`/${langCode}`)
+        pathToModify.startsWith(`/${langCode}`)
       ) {
-        currentPath = currentPath.replace(`/${langCode}`, "") || "/";
+        pathToModify = pathToModify.replace(`/${langCode}`, "") || "/";
       }
     });
 
     // Add target language prefix
     let newPath;
     if (targetLanguage === defaultLocale) {
-      newPath = currentPath;
+      newPath = pathToModify;
     } else {
-      newPath = `/${targetLanguage}${currentPath}`;
+      newPath = `/${targetLanguage}${pathToModify}`;
     }
 
     window.location.href = newPath;
