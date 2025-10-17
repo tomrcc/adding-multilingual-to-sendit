@@ -42,11 +42,12 @@ const detectLanguageFromUrl = (urlPath) => {
 export default function useLanguagePicker(pageUrl) {
   // Initialize with detected language from current URL
   const getInitialLanguage = () => {
-    // Handle both URL object and plain object with pathname
+    // Prioritize window.location.pathname since it contains the actual URL with language prefix
+    // Astro's canonicalURL strips the language prefix for SEO purposes
     const currentPath =
-      pageUrl?.pathname ||
-      pageUrl?.toString?.() ||
-      (typeof window !== "undefined" ? window.location.pathname : "");
+      typeof window !== "undefined"
+        ? window.location.pathname
+        : pageUrl?.pathname || pageUrl?.toString?.() || "";
     const detectedLang = detectLanguageFromUrl(currentPath);
 
     // Debug logging
@@ -65,9 +66,9 @@ export default function useLanguagePicker(pageUrl) {
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
   useEffect(() => {
-    // Handle both URL object and plain object with pathname
-    const currentPath =
-      pageUrl?.pathname || pageUrl?.toString?.() || window.location.pathname;
+    // Prioritize window.location.pathname since it contains the actual URL with language prefix
+    // Astro's canonicalURL strips the language prefix for SEO purposes
+    const currentPath = window.location.pathname;
     const detectedLang = detectLanguageFromUrl(currentPath);
 
     // Debug logging
@@ -83,9 +84,8 @@ export default function useLanguagePicker(pageUrl) {
   }, [pageUrl]);
 
   const switchLanguage = (targetLanguage) => {
-    // Handle both URL object and plain object with pathname
-    const currentPath =
-      pageUrl?.pathname || pageUrl?.toString?.() || window.location.pathname;
+    // Use window.location.pathname since it contains the actual URL with language prefix
+    const currentPath = window.location.pathname;
 
     if (!currentPath) return;
 
