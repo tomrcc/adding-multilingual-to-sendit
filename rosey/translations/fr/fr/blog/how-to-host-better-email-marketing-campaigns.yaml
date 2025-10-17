@@ -1,0 +1,130 @@
+_inputs:
+  $:
+    type: object
+    comment: "[fr/blog/how-to-host-better-email-marketing-campaigns/](https://tan-a\
+      rtichoke.cloudvent.net/fr/blog/how-to-host-better-email-marketing-campaig\
+      ns/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[fr/blog/how-to-host-better-email-marketing-campaigns/](https://tan-a\
+            rtichoke.cloudvent.net/fr/blog/how-to-host-better-email-marketing-c\
+            ampaigns/)"
+          inputs:
+            - About
+            - All Articles
+            - Blog
+            - Contact
+            - Features
+            - Get Started
+            - Home
+            - Marketing
+            - Pricing
+            - Technology
+        - heading: Already translated (fr)
+          comment: "[fr/blog/how-to-host-better-email-marketing-campaigns/](https://tan-a\
+            rtichoke.cloudvent.net/fr/blog/how-to-host-better-email-marketing-c\
+            ampaigns/)"
+          inputs: []
+  About:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=About)"
+    context: {}
+  All Articles:
+    label: All Articles
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=All%20Articles)"
+    context: {}
+  Blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Blog)"
+    context: {}
+  Contact:
+    label: Contact
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Contact)"
+    context: {}
+  Features:
+    label: Features
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Features)"
+    context: {}
+  Get Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Get%20Started)"
+    context: {}
+  Home:
+    label: Home
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Home)"
+    context: {}
+  Marketing:
+    label: Marketing
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Marketing)"
+    context: {}
+  Pricing:
+    label: Pricing
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Pricing)"
+    context: {}
+  Technology:
+    label: Technology
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/fr/blog/how-to-host-better-e\
+      mail-marketing-campaigns/#:~:text=Technology)"
+    context: {}
+urlTranslation: fr/blog/how-to-host-better-email-marketing-campaigns/index.html
+About: ""
+All Articles: ""
+Blog: ""
+Contact: ""
+Features: ""
+Get Started: ""
+Home: ""
+Marketing: ""
+Pricing: ""
+Technology: ""

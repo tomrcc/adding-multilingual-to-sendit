@@ -1,0 +1,127 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/marketing/2/](https://tan-artichoke.cloudvent.net/tags/marketin\
+      g/2/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[tags/marketing/2/](https://tan-artichoke.cloudvent.net/tags/marketin\
+            g/2/)"
+          inputs:
+            - About
+            - All Articles
+            - Blog
+            - Contact
+            - Features
+            - Get Started
+            - Home
+            - Marketing
+            - Pricing
+            - Technology
+        - heading: Already translated (fr)
+          comment: "[tags/marketing/2/](https://tan-artichoke.cloudvent.net/tags/marketin\
+            g/2/)"
+          inputs: []
+  About:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Ab\
+      out)"
+    context: {}
+  All Articles:
+    label: All Articles
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Al\
+      l%20Articles)"
+    context: {}
+  Blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Bl\
+      og)"
+    context: {}
+  Contact:
+    label: Contact
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Co\
+      ntact)"
+    context: {}
+  Features:
+    label: Features
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Fe\
+      atures)"
+    context: {}
+  Get Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Ge\
+      t%20Started)"
+    context: {}
+  Home:
+    label: Home
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Ho\
+      me)"
+    context: {}
+  Marketing:
+    label: Marketing
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Ma\
+      rketing)"
+    context: {}
+  Pricing:
+    label: Pricing
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Pr\
+      icing)"
+    context: {}
+  Technology:
+    label: Technology
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/tags/marketing/2/#:~:text=Te\
+      chnology)"
+    context: {}
+urlTranslation: tags/marketing/2/index.html
+About: ""
+All Articles: ""
+Blog: ""
+Contact: ""
+Features: ""
+Get Started: ""
+Home: ""
+Marketing: ""
+Pricing: ""
+Technology: ""

@@ -1,42 +1,42 @@
 {
-  "About": {
-    "original": "About",
-    "value": "À propos"
-  },
-  "All Articles": {
-    "original": "All Articles",
-    "value": "Tous les articles"
-  },
-  "Blog": {
-    "original": "Blog",
-    "value": "Blog"
-  },
-  "Contact": {
-    "original": "Contact",
-    "value": "Contact"
-  },
-  "Features": {
-    "original": "Features",
-    "value": "Features"
-  },
-  "Get Started": {
-    "original": "Get Started",
-    "value": "Get Started"
-  },
-  "Home": {
-    "original": "Home",
-    "value": "Home"
-  },
-  "Marketing": {
-    "original": "Marketing",
-    "value": "Marketing"
-  },
-  "Pricing": {
-    "original": "Pricing",
-    "value": "Pricing"
-  },
-  "Technology": {
-    "original": "Technology",
-    "value": "Technology"
-  }
+	"About": {
+		"original": "About",
+		"value": "About"
+	},
+	"All Articles": {
+		"original": "All Articles",
+		"value": "All Articles"
+	},
+	"Blog": {
+		"original": "Blog",
+		"value": "Blog"
+	},
+	"Contact": {
+		"original": "Contact",
+		"value": "Contact"
+	},
+	"Features": {
+		"original": "Features",
+		"value": "Features"
+	},
+	"Get Started": {
+		"original": "Get Started",
+		"value": "Get Started"
+	},
+	"Home": {
+		"original": "Home",
+		"value": "Home"
+	},
+	"Marketing": {
+		"original": "Marketing",
+		"value": "Marketing"
+	},
+	"Pricing": {
+		"original": "Pricing",
+		"value": "Pricing"
+	},
+	"Technology": {
+		"original": "Technology",
+		"value": "Technology"
+	}
 }

@@ -1,0 +1,114 @@
+_inputs:
+  $:
+    type: object
+    comment: "[about/](https://tan-artichoke.cloudvent.net/about/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: "[about/](https://tan-artichoke.cloudvent.net/about/)"
+          inputs:
+            - About
+            - All Articles
+            - Blog
+            - Contact
+            - Features
+            - Get Started
+            - Home
+            - Marketing
+            - Pricing
+            - Technology
+        - heading: Already translated (fr)
+          comment: "[about/](https://tan-artichoke.cloudvent.net/about/)"
+          inputs: []
+  About:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=About)"
+    context: {}
+  All Articles:
+    label: All Articles
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=All%20Article\
+      s)"
+    context: {}
+  Blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://tan-artichoke.cloudvent.net/about/#:~:text=Blog)"
+    context: {}
+  Contact:
+    label: Contact
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=Contact)"
+    context: {}
+  Features:
+    label: Features
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=Features)"
+    context: {}
+  Get Started:
+    label: Get Started
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=Get%20Started\
+      )"
+    context: {}
+  Home:
+    label: Home
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://tan-artichoke.cloudvent.net/about/#:~:text=Home)"
+    context: {}
+  Marketing:
+    label: Marketing
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=Marketing)"
+    context: {}
+  Pricing:
+    label: Pricing
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=Pricing)"
+    context: {}
+  Technology:
+    label: Technology
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://tan-artichoke.cloudvent.net/about/#:~:text=Technology)"
+    context: {}
+urlTranslation: about/index.html
+About: ""
+All Articles: ""
+Blog: ""
+Contact: ""
+Features: ""
+Get Started: ""
+Home: ""
+Marketing: ""
+Pricing: ""
+Technology: ""
